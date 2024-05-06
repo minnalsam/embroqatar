@@ -13,26 +13,31 @@ import Software from "./Pages/Software/Software";
 import RootLayout from "./layouts/RootLayout";
 import ProductLayout from "./layouts/ProductLayout";
 
-
-
 const App = () => {
   return (
     <>
+      {/* navbar */}
       <NavbarContainer />
+
+      {/*main content  */}
       <Routes>
         <Route path="/" element={<RootLayout />}>
-        <Route index element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='products' element={<Products />} >
-          {/* <Route index element={ <Products />} /> */}
-          <Route path='embroidery' element={ <Embroidery />} />
-          <Route path='software' element={ <Software />} />
-        </Route>
-        <Route path='service' element={<Service />} />
-        <Route path='contact' element={<Contact />} />
-        <Route path="*" element={ <NotFoundPage/>} />
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+
+          <Route path="products" element={<Products />}>
+            {/* <Route index element={ <Products />} /> */}
+            <Route path="embroidery" element={<Embroidery />} />
+            <Route path="software" element={<Software />} />
+          </Route>
+
+          <Route path="service" element={<Service />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
+
+      {/* footer */}
       <Footer />
     </>
   );

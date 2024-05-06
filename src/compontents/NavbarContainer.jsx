@@ -1,7 +1,8 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const NavbarContainer = () => {
+    
+
   return (
       <nav className='flex justify-around items-center h-20 bg-cyan-300'>
           <div className=''>Logo1</div>
@@ -14,14 +15,16 @@ const NavbarContainer = () => {
                       <NavLink to='/about'>About</NavLink>
                   </li>
                   <li>
-                      <NavLink to='/products'>Products</NavLink>
-                  </li>
-                  <li>
-                      <NavLink to='/contact'>Contact</NavLink>
+                      <NavLink to='/products' >Products</NavLink>
+                      
                   </li>
                   <li>
                       <NavLink to='/service'>Service</NavLink>
                   </li>
+                  <li>
+                      <NavLink to='/contact'>Contact</NavLink>
+                  </li>
+                  
               </ul>
           </div>
     </nav>

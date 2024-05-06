@@ -22,6 +22,9 @@ const NavbarContainer = () => {
                       <NavLink to='/service'>Service</NavLink>
                   </li>
                   <li>
+                      <NavLink to='/admin'>Admin</NavLink>
+                  </li>
+                  <li>
                       <NavLink to='/contact'>Contact</NavLink>
                   </li>
                   

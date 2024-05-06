@@ -18,7 +18,10 @@ const Products = React.lazy(() => import("./Pages/Products"));
 const App = () => {
   return (
     <>
+      {/* navbar */}
       <NavbarContainer />
+
+      {/*main content  */}
       <Routes>
         <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
@@ -33,6 +36,8 @@ const App = () => {
         <Route path="*" element={ <NotFoundPage/>} />
         </Route>
       </Routes>
+
+      {/* footer */}
       <Footer />
     </>
   );

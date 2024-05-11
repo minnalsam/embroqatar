@@ -1,13 +1,18 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import CardContainer from '../compontents/Card'
+import { useTranslation } from 'react-i18next';
 
 const Products = () => {
+  const { t } = useTranslation();
   const cards = [{id:1,title:"embroidery",img:'/embroidery.jpeg'},{id:2,title:"software",img:'/wilcom.jpeg'},]
+
+
+
   return (
     <div className='h-screen'>
           <h1 className='text-3xl font-bold text-blue-500 text-center'>
-        This is Products Page
+          {t('Prdct_title')}
       </h1>
       <div className='flex gap-12 justify-center items-center mt-12'>
           {cards.map((card,i) => {

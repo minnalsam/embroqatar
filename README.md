@@ -21,3 +21,5 @@ git push -u origin main
 git remote add origin https://github.com/minnalsam/embroqatar.git
 git branch -M main
 git push -u origin main
+
+git commit -m "first commit"
